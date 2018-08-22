@@ -16,6 +16,16 @@ class Weather
         $this->key = $key;
     }
 
+    public function getLiveWeather(string $city, string $format = 'json')
+    {
+        return $this->getWeather($city, 'base', $format);
+    }
+
+    public function getForecastsWeather(string $city, string $format = 'json')
+    {
+        return $this->getWeather($city, 'all', $format);
+    }
+
     public function getWeather(string $city, string $type = 'base', string $format = 'json')
     {
         $url = 'https://restapi.amap.com/v3/weather/weatherInfo';
