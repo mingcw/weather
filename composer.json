@@ -1,0 +1,28 @@
+{
+    "name": "mingcw/weather",
+    "description": "A weather SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mingcw",
+            "email": "mingc2016@126.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mingcw\\Weather\\": "./src"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "phpunit/phpunit": "^7.2",
+        "mockery/mockery": "^1.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mingcw\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
