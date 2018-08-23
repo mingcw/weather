@@ -1,5 +1,13 @@
 <?php
 
+/*
+ * This file is part of the mingcw/weather.
+ *
+ * (c) mingcw <mingc2016@126.com>
+ *
+ * This source file is subject to the MIT license that is bundled.
+ */
+
 namespace Mingcw\Weather;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
@@ -8,7 +16,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 
     public function register()
     {
-        $this->app->singleton(Weather::class, function(){
+        $this->app->singleton(Weather::class, function () {
             return new Weather(config('services.weather.key'));
         });
 

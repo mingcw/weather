@@ -1,5 +1,13 @@
 <?php
 
+/*
+ * This file is part of the mingcw/weather.
+ *
+ * (c) mingcw <mingc2016@126.com>
+ *
+ * This source file is subject to the MIT license that is bundled.
+ */
+
 namespace Mingcw\Weather\Tests;
 
 use Mingcw\Weather\Weather;
@@ -13,7 +21,6 @@ use Mockery\Matcher\AnyArgs;
 
 class WeatherTest extends TestCase
 {
-
     // 检查 $type 参数
     public function testGetWeatherWithInvalidType()
     {
