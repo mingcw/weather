@@ -11,22 +11,22 @@ class Weather
     protected $key;
     protected $guzzleOptions = [];
 
-    public function __construct(string $key)
+    public function __construct($key)
     {
         $this->key = $key;
     }
 
-    public function getLiveWeather(string $city, string $format = 'json')
+    public function getLiveWeather($city, $format = 'json')
     {
         return $this->getWeather($city, 'base', $format);
     }
 
-    public function getForecastsWeather(string $city, string $format = 'json')
+    public function getForecastsWeather($city, $format = 'json')
     {
         return $this->getWeather($city, 'all', $format);
     }
 
-    public function getWeather(string $city, string $type = 'base', string $format = 'json')
+    public function getWeather($city, $type = 'base', $format = 'json')
     {
         $url = 'https://restapi.amap.com/v3/weather/weatherInfo';
 
