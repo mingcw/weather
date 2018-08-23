@@ -7,7 +7,7 @@
 ## 安装
 
 ```shell
-$ composer require overtrue/weather
+$ composer require mingcw/weather
 ```
 
 ## 配置
